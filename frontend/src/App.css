@@ -1,8 +1,5 @@
-/* .App {
-  text-align: center;
-} */
 
-.App-header {
+.app-header {
   background-color: #1d9aad;
   height: 12vh;
   display: flex;
@@ -20,5 +17,3 @@ section {
   align-items: center;
   justify-content: center;
 }
-
-

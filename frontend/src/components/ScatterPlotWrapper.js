@@ -1,10 +1,10 @@
 import './ScatterPlotWrapper.css';
 import {useState, useEffect} from "react"
 
+import {ParentSize}  from '@visx/responsive';
 import ScatterPlot from './ScatterPlot';
 
 function ScatterPlotWrapper() {
-
   const [data, setData] = useState(null);
   const [errorMessage, setErrorMessage] = useState(false);
 
@@ -29,7 +29,7 @@ function ScatterPlotWrapper() {
   return (
     <>
       <div className='chart-container'>
-        {data && <ScatterPlot data={data}/>} 
+        {data &&   <ParentSize>{({ width, height }) => <ScatterPlot data={data} width={width} height={height} />}</ParentSize>}
         {errorMessage && <h4 className="error-message">Error occurred while reading file</h4>} 
       </div>  
     </>

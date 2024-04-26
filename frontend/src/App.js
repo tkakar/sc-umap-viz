@@ -4,7 +4,7 @@ import ScatterPlotWrapper from './components/ScatterPlotWrapper';
 function App() {
   return (
     <>
-      <header className="App-header">
+      <header className="app-header">
         <h3>UMAP Clusters for PBMC 3K Dataset</h3>
       </header>
       <section>

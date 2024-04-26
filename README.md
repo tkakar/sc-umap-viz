@@ -12,7 +12,6 @@ To execute the `main.py` script make sure you are in the parent directory.
 ```
 cd sc-umap-viz
 python main.py
-
 ``` 
 
 ## To start the web server
@@ -20,7 +19,6 @@ python main.py
 ```
 cd frontend
 npm start
-
 ``` 
 **Note:** Make sure you have the latest version of node installed
 
